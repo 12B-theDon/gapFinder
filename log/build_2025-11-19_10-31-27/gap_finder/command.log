@@ -1,0 +1,2 @@
+Invoking command in '/gapFinder_ws/build/gap_finder': /usr/bin/cmake /gapFinder_ws/src/gap_finder -DCMAKE_INSTALL_PREFIX=/gapFinder_ws/install/gap_finder
+Invoked command in '/gapFinder_ws/build/gap_finder' returned '1': /usr/bin/cmake /gapFinder_ws/src/gap_finder -DCMAKE_INSTALL_PREFIX=/gapFinder_ws/install/gap_finder

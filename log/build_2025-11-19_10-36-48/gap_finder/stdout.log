@@ -1,0 +1,26 @@
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /gapFinder_ws/build/gap_finder
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /gapFinder_ws/install/gap_finder/share/gap_finder/launch/gap_finder_launch.py
+-- Symlinking: /gapFinder_ws/install/gap_finder/share/gap_finder/configs/default.yaml
+-- Symlinking: /gapFinder_ws/install/gap_finder/lib/gap_finder/gap_finder_node.py
+-- Symlinking: /gapFinder_ws/install/gap_finder/share/ament_index/resource_index/package_run_dependencies/gap_finder
+-- Symlinking: /gapFinder_ws/install/gap_finder/share/ament_index/resource_index/parent_prefix_path/gap_finder
+-- Symlinking: /gapFinder_ws/install/gap_finder/share/gap_finder/environment/ament_prefix_path.sh
+-- Symlinking: /gapFinder_ws/install/gap_finder/share/gap_finder/environment/ament_prefix_path.dsv
+-- Symlinking: /gapFinder_ws/install/gap_finder/share/gap_finder/environment/path.sh
+-- Symlinking: /gapFinder_ws/install/gap_finder/share/gap_finder/environment/path.dsv
+-- Symlinking: /gapFinder_ws/install/gap_finder/share/gap_finder/local_setup.bash
+-- Symlinking: /gapFinder_ws/install/gap_finder/share/gap_finder/local_setup.sh
+-- Symlinking: /gapFinder_ws/install/gap_finder/share/gap_finder/local_setup.zsh
+-- Symlinking: /gapFinder_ws/install/gap_finder/share/gap_finder/local_setup.dsv
+-- Symlinking: /gapFinder_ws/install/gap_finder/share/gap_finder/package.dsv
+-- Symlinking: /gapFinder_ws/install/gap_finder/share/ament_index/resource_index/packages/gap_finder
+-- Symlinking: /gapFinder_ws/install/gap_finder/share/gap_finder/cmake/gap_finderConfig.cmake
+-- Symlinking: /gapFinder_ws/install/gap_finder/share/gap_finder/cmake/gap_finderConfig-version.cmake
+-- Symlinking: /gapFinder_ws/install/gap_finder/share/gap_finder/package.xml

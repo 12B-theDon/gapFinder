@@ -1,0 +1,27 @@
+[0.010s] Invoking command in '/gapFinder_ws/build/gap_finder': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/wall_ws/install/wall_followint:/opt/ros/humble /usr/bin/cmake --build /gapFinder_ws/build/gap_finder -- -j24 -l24
+[0.040s] Invoked command in '/gapFinder_ws/build/gap_finder' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/wall_ws/install/wall_followint:/opt/ros/humble /usr/bin/cmake --build /gapFinder_ws/build/gap_finder -- -j24 -l24
+[0.046s] Invoking command in '/gapFinder_ws/build/gap_finder': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/wall_ws/install/wall_followint:/opt/ros/humble /usr/bin/cmake --install /gapFinder_ws/build/gap_finder
+[0.052s] -- Install configuration: ""
+[0.052s] -- Execute custom install script
+[0.053s] -- Up-to-date symlink: /gapFinder_ws/install/gap_finder/share/gap_finder/launch/gap_finder_launch.py
+[0.053s] -- Up-to-date symlink: /gapFinder_ws/install/gap_finder/share/gap_finder/launch/gap_finder_markers_only_launch.py
+[0.053s] -- Up-to-date symlink: /gapFinder_ws/install/gap_finder/share/gap_finder/configs/default.yaml
+[0.053s] -- Up-to-date symlink: /gapFinder_ws/install/gap_finder/share/gap_finder/rviz/gap_finder_markers.rviz
+[0.053s] -- Up-to-date symlink: /gapFinder_ws/install/gap_finder/lib/gap_finder/gap_finder_node.py
+[0.053s] -- Up-to-date symlink: /gapFinder_ws/install/gap_finder/lib/gap_finder/gap_finder_visual_node.py
+[0.053s] -- Up-to-date symlink: /gapFinder_ws/install/gap_finder/share/ament_index/resource_index/package_run_dependencies/gap_finder
+[0.053s] -- Up-to-date symlink: /gapFinder_ws/install/gap_finder/share/ament_index/resource_index/parent_prefix_path/gap_finder
+[0.054s] -- Up-to-date symlink: /gapFinder_ws/install/gap_finder/share/gap_finder/environment/ament_prefix_path.sh
+[0.054s] -- Up-to-date symlink: /gapFinder_ws/install/gap_finder/share/gap_finder/environment/ament_prefix_path.dsv
+[0.054s] -- Up-to-date symlink: /gapFinder_ws/install/gap_finder/share/gap_finder/environment/path.sh
+[0.054s] -- Up-to-date symlink: /gapFinder_ws/install/gap_finder/share/gap_finder/environment/path.dsv
+[0.054s] -- Up-to-date symlink: /gapFinder_ws/install/gap_finder/share/gap_finder/local_setup.bash
+[0.054s] -- Up-to-date symlink: /gapFinder_ws/install/gap_finder/share/gap_finder/local_setup.sh
+[0.054s] -- Up-to-date symlink: /gapFinder_ws/install/gap_finder/share/gap_finder/local_setup.zsh
+[0.054s] -- Up-to-date symlink: /gapFinder_ws/install/gap_finder/share/gap_finder/local_setup.dsv
+[0.054s] -- Symlinking: /gapFinder_ws/install/gap_finder/share/gap_finder/package.dsv
+[0.061s] -- Up-to-date symlink: /gapFinder_ws/install/gap_finder/share/ament_index/resource_index/packages/gap_finder
+[0.061s] -- Up-to-date symlink: /gapFinder_ws/install/gap_finder/share/gap_finder/cmake/gap_finderConfig.cmake
+[0.062s] -- Up-to-date symlink: /gapFinder_ws/install/gap_finder/share/gap_finder/cmake/gap_finderConfig-version.cmake
+[0.062s] -- Up-to-date symlink: /gapFinder_ws/install/gap_finder/share/gap_finder/package.xml
+[0.063s] Invoked command in '/gapFinder_ws/build/gap_finder' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/wall_ws/install/wall_followint:/opt/ros/humble /usr/bin/cmake --install /gapFinder_ws/build/gap_finder

@@ -1,0 +1,13 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /gapFinder_ws/install/gap_finder/share/gap_finder/launch/gap_finder_launch.py
+-- Up-to-date symlink: /gapFinder_ws/install/gap_finder/share/gap_finder/launch/gap_finder_markers_only_launch.py
+-- Up-to-date symlink: /gapFinder_ws/install/gap_finder/share/gap_finder/configs/default.yaml
+[31mCMake Error at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:100 (message):
+  ament_cmake_symlink_install_directory() can't find
+  '/gapFinder_ws/src/gap_finder/rviz'
+Call Stack (most recent call first):
+  ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:314 (ament_cmake_symlink_install_directory)
+  cmake_install.cmake:46 (include)
+
+[0m

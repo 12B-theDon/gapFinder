@@ -1,0 +1,4 @@
+Invoking command in '/gapFinder_ws/build/gap_finder': /usr/bin/cmake --build /gapFinder_ws/build/gap_finder -- -j24 -l24
+Invoked command in '/gapFinder_ws/build/gap_finder' returned '0': /usr/bin/cmake --build /gapFinder_ws/build/gap_finder -- -j24 -l24
+Invoking command in '/gapFinder_ws/build/gap_finder': /usr/bin/cmake --install /gapFinder_ws/build/gap_finder
+Invoked command in '/gapFinder_ws/build/gap_finder' returned '0': /usr/bin/cmake --install /gapFinder_ws/build/gap_finder

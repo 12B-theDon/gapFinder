@@ -1,0 +1,1 @@
+[0.007s] Invoking command in '/gapFinder_ws/build/gap_finder': /usr/bin/cmake --build /gapFinder_ws/build/gap_finder -- -j24 -l24

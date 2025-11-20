@@ -1,0 +1,4 @@
+Invoking command in '/gapFinder_ws/build/gap_finder': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/wall_ws/install/wall_followint:/opt/ros/humble /usr/bin/cmake --build /gapFinder_ws/build/gap_finder -- -j24 -l24
+Invoked command in '/gapFinder_ws/build/gap_finder' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/wall_ws/install/wall_followint:/opt/ros/humble /usr/bin/cmake --build /gapFinder_ws/build/gap_finder -- -j24 -l24
+Invoking command in '/gapFinder_ws/build/gap_finder': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/wall_ws/install/wall_followint:/opt/ros/humble /usr/bin/cmake --install /gapFinder_ws/build/gap_finder
+Invoked command in '/gapFinder_ws/build/gap_finder' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/wall_ws/install/wall_followint:/opt/ros/humble /usr/bin/cmake --install /gapFinder_ws/build/gap_finder

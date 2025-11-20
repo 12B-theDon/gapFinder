@@ -1,0 +1,4 @@
+source;share/gap_finder/local_setup.bash
+source;share/gap_finder/local_setup.dsv
+source;share/gap_finder/local_setup.sh
+source;share/gap_finder/local_setup.zsh

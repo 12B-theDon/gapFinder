@@ -1,0 +1,338 @@
+[0.000000] (-) TimerEvent: {}
+[0.000495] (gap_finder) JobQueued: {'identifier': 'gap_finder', 'dependencies': OrderedDict()}
+[0.000654] (gap_finder) JobStarted: {'identifier': 'gap_finder'}
+[0.005724] (gap_finder) JobProgress: {'identifier': 'gap_finder', 'progress': 'cmake'}
+[0.006932] (gap_finder) Command: {'cmd': ['/usr/bin/cmake', '/gapFinder_ws/src/gap_finder', '-DCMAKE_INSTALL_PREFIX=/gapFinder_ws/install/gap_finder'], 'cwd': '/gapFinder_ws/build/gap_finder', 'env': OrderedDict([('VSCODE_CWD', '/root/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'codex_vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"en","osLocale":"en","resolvedLanguage":"en","defaultMessagesFile":"/root/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/out/nls.messages.json","locale":"en","availableLanguages":{}}'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('HOSTNAME', 'user-System-Product-Name'), ('SHLVL', '1'), ('BROWSER', '/root/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/bin/helpers/browser.sh'), ('HOME', '/root'), ('VSCODE_IPC_HOOK_CLI', '/tmp/runtime-root/vscode-ipc-d5fa87fc-1222-4de2-b024-6de80299dc74.sock'), ('REMOTE_CONTAINERS', 'true'), ('APPLICATION_INSIGHTS_NO_STATSBEAT', 'true'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-0e453289-241a-4225-b8cb-f952e1327fc2.sock'), ('VSCODE_HANDLES_SIGPIPE', 'true'), ('_', '/usr/bin/colcon'), ('RUST_LOG', 'warn'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/tmp/.tmpMqxKCt:/root/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/extensions/openai.chatgpt-0.4.43-linux-x64/bin/linux-x86_64'), ('XDG_RUNTIME_DIR', '/tmp/runtime-root'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-0e453289-241a-4225-b8cb-f952e1327fc2.sock","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':1'), ('CODEX_SANDBOX_NETWORK_DISABLED', '1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', ''), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-0e453289-241a-4225-b8cb-f952e1327fc2.sock'), ('SHELL', '/bin/bash'), ('ELECTRON_RUN_AS_NODE', '1'), ('PWD', '/gapFinder_ws/build/gap_finder'), ('LC_ALL', 'C.UTF-8'), ('COLCON', '1')]), 'shell': False}
+[0.057884] (gap_finder) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.096762] (gap_finder) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.098908] (-) TimerEvent: {}
+[0.105461] (gap_finder) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.164702] (gap_finder) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.167872] (gap_finder) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.167972] (gap_finder) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.168346] (gap_finder) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.170407] (gap_finder) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.199372] (-) TimerEvent: {}
+[0.229597] (gap_finder) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.235143] (gap_finder) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.235254] (gap_finder) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.235279] (gap_finder) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.241126] (gap_finder) StderrLine: {'line': b'CMake Error at CMakeLists.txt:4 (find_package):\n'}
+[0.241233] (gap_finder) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.241258] (gap_finder) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.241277] (gap_finder) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.241295] (gap_finder) StderrLine: {'line': b'\n'}
+[0.241311] (gap_finder) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.241333] (gap_finder) StderrLine: {'line': b'  any of the following names:\n'}
+[0.241350] (gap_finder) StderrLine: {'line': b'\n'}
+[0.241366] (gap_finder) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.241382] (gap_finder) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.241399] (gap_finder) StderrLine: {'line': b'\n'}
+[0.241415] (gap_finder) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.241431] (gap_finder) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.241446] (gap_finder) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.241461] (gap_finder) StderrLine: {'line': b'  has been installed.\n'}
+[0.241476] (gap_finder) StderrLine: {'line': b'\n'}
+[0.241491] (gap_finder) StderrLine: {'line': b'\n'}
+[0.241507] (gap_finder) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.241524] (gap_finder) StdoutLine: {'line': b'See also "/gapFinder_ws/build/gap_finder/CMakeFiles/CMakeOutput.log".\n'}
+[0.243786] (gap_finder) CommandEnded: {'returncode': 1}
+[0.299527] (-) TimerEvent: {}
+[0.399713] (-) TimerEvent: {}
+[0.499871] (-) TimerEvent: {}
+[0.600118] (-) TimerEvent: {}
+[0.700327] (-) TimerEvent: {}
+[0.801085] (-) TimerEvent: {}
+[0.901371] (-) TimerEvent: {}
+[1.002298] (-) TimerEvent: {}
+[1.102505] (-) TimerEvent: {}
+[1.203358] (-) TimerEvent: {}
+[1.303522] (-) TimerEvent: {}
+[1.404485] (-) TimerEvent: {}
+[1.504653] (-) TimerEvent: {}
+[1.605910] (-) TimerEvent: {}
+[1.707233] (-) TimerEvent: {}
+[1.809296] (-) TimerEvent: {}
+[1.910048] (-) TimerEvent: {}
+[2.010806] (-) TimerEvent: {}
+[2.111029] (-) TimerEvent: {}
+[2.212581] (-) TimerEvent: {}
+[2.312786] (-) TimerEvent: {}
+[2.413049] (-) TimerEvent: {}
+[2.513218] (-) TimerEvent: {}
+[2.613825] (-) TimerEvent: {}
+[2.714007] (-) TimerEvent: {}
+[2.814471] (-) TimerEvent: {}
+[2.914641] (-) TimerEvent: {}
+[3.014799] (-) TimerEvent: {}
+[3.115449] (-) TimerEvent: {}
+[3.215610] (-) TimerEvent: {}
+[3.315771] (-) TimerEvent: {}
+[3.415956] (-) TimerEvent: {}
+[3.516110] (-) TimerEvent: {}
+[3.616719] (-) TimerEvent: {}
+[3.716947] (-) TimerEvent: {}
+[3.817440] (-) TimerEvent: {}
+[3.917683] (-) TimerEvent: {}
+[4.017859] (-) TimerEvent: {}
+[4.118336] (-) TimerEvent: {}
+[4.218628] (-) TimerEvent: {}
+[4.318822] (-) TimerEvent: {}
+[4.419112] (-) TimerEvent: {}
+[4.519286] (-) TimerEvent: {}
+[4.619438] (-) TimerEvent: {}
+[4.719786] (-) TimerEvent: {}
+[4.819969] (-) TimerEvent: {}
+[4.920130] (-) TimerEvent: {}
+[5.020283] (-) TimerEvent: {}
+[5.120953] (-) TimerEvent: {}
+[5.221130] (-) TimerEvent: {}
+[5.321284] (-) TimerEvent: {}
+[5.421547] (-) TimerEvent: {}
+[5.521772] (-) TimerEvent: {}
+[5.621935] (-) TimerEvent: {}
+[5.723841] (-) TimerEvent: {}
+[5.824060] (-) TimerEvent: {}
+[5.925391] (-) TimerEvent: {}
+[6.025602] (-) TimerEvent: {}
+[6.125922] (-) TimerEvent: {}
+[6.226120] (-) TimerEvent: {}
+[6.326544] (-) TimerEvent: {}
+[6.426887] (-) TimerEvent: {}
+[6.527932] (-) TimerEvent: {}
+[6.628364] (-) TimerEvent: {}
+[6.728566] (-) TimerEvent: {}
+[6.828843] (-) TimerEvent: {}
+[6.929075] (-) TimerEvent: {}
+[7.029278] (-) TimerEvent: {}
+[7.129507] (-) TimerEvent: {}
+[7.229664] (-) TimerEvent: {}
+[7.331617] (-) TimerEvent: {}
+[7.431775] (-) TimerEvent: {}
+[7.531945] (-) TimerEvent: {}
+[7.632085] (-) TimerEvent: {}
+[7.732241] (-) TimerEvent: {}
+[7.833325] (-) TimerEvent: {}
+[7.933543] (-) TimerEvent: {}
+[8.033698] (-) TimerEvent: {}
+[8.133865] (-) TimerEvent: {}
+[8.234437] (-) TimerEvent: {}
+[8.334655] (-) TimerEvent: {}
+[8.434843] (-) TimerEvent: {}
+[8.535046] (-) TimerEvent: {}
+[8.635269] (-) TimerEvent: {}
+[8.735431] (-) TimerEvent: {}
+[8.836339] (-) TimerEvent: {}
+[8.936501] (-) TimerEvent: {}
+[9.036675] (-) TimerEvent: {}
+[9.137149] (-) TimerEvent: {}
+[9.237315] (-) TimerEvent: {}
+[9.337779] (-) TimerEvent: {}
+[9.437969] (-) TimerEvent: {}
+[9.538680] (-) TimerEvent: {}
+[9.638850] (-) TimerEvent: {}
+[9.739058] (-) TimerEvent: {}
+[9.839277] (-) TimerEvent: {}
+[9.939515] (-) TimerEvent: {}
+[10.039710] (-) TimerEvent: {}
+[10.139892] (-) TimerEvent: {}
+[10.240876] (-) TimerEvent: {}
+[10.341250] (-) TimerEvent: {}
+[10.441554] (-) TimerEvent: {}
+[10.542494] (-) TimerEvent: {}
+[10.642666] (-) TimerEvent: {}
+[10.742846] (-) TimerEvent: {}
+[10.843073] (-) TimerEvent: {}
+[10.943245] (-) TimerEvent: {}
+[11.043600] (-) TimerEvent: {}
+[11.145267] (-) TimerEvent: {}
+[11.245453] (-) TimerEvent: {}
+[11.345960] (-) TimerEvent: {}
+[11.447054] (-) TimerEvent: {}
+[11.547256] (-) TimerEvent: {}
+[11.647434] (-) TimerEvent: {}
+[11.748377] (-) TimerEvent: {}
+[11.848588] (-) TimerEvent: {}
+[11.948761] (-) TimerEvent: {}
+[12.050138] (-) TimerEvent: {}
+[12.150296] (-) TimerEvent: {}
+[12.250448] (-) TimerEvent: {}
+[12.351369] (-) TimerEvent: {}
+[12.451615] (-) TimerEvent: {}
+[12.551804] (-) TimerEvent: {}
+[12.652347] (-) TimerEvent: {}
+[12.752536] (-) TimerEvent: {}
+[12.852711] (-) TimerEvent: {}
+[12.953425] (-) TimerEvent: {}
+[13.053582] (-) TimerEvent: {}
+[13.154589] (-) TimerEvent: {}
+[13.255019] (-) TimerEvent: {}
+[13.355211] (-) TimerEvent: {}
+[13.455412] (-) TimerEvent: {}
+[13.555792] (-) TimerEvent: {}
+[13.656063] (-) TimerEvent: {}
+[13.756232] (-) TimerEvent: {}
+[13.856406] (-) TimerEvent: {}
+[13.956566] (-) TimerEvent: {}
+[14.056832] (-) TimerEvent: {}
+[14.156996] (-) TimerEvent: {}
+[14.257178] (-) TimerEvent: {}
+[14.357345] (-) TimerEvent: {}
+[14.457862] (-) TimerEvent: {}
+[14.558165] (-) TimerEvent: {}
+[14.658416] (-) TimerEvent: {}
+[14.758639] (-) TimerEvent: {}
+[14.858997] (-) TimerEvent: {}
+[14.959326] (-) TimerEvent: {}
+[15.060398] (-) TimerEvent: {}
+[15.161233] (-) TimerEvent: {}
+[15.261947] (-) TimerEvent: {}
+[15.362500] (-) TimerEvent: {}
+[15.463074] (-) TimerEvent: {}
+[15.563480] (-) TimerEvent: {}
+[15.663637] (-) TimerEvent: {}
+[15.764124] (-) TimerEvent: {}
+[15.864302] (-) TimerEvent: {}
+[15.964478] (-) TimerEvent: {}
+[16.064754] (-) TimerEvent: {}
+[16.165255] (-) TimerEvent: {}
+[16.265409] (-) TimerEvent: {}
+[16.365585] (-) TimerEvent: {}
+[16.465858] (-) TimerEvent: {}
+[16.566193] (-) TimerEvent: {}
+[16.666362] (-) TimerEvent: {}
+[16.766574] (-) TimerEvent: {}
+[16.867198] (-) TimerEvent: {}
+[16.967527] (-) TimerEvent: {}
+[17.067722] (-) TimerEvent: {}
+[17.168208] (-) TimerEvent: {}
+[17.268818] (-) TimerEvent: {}
+[17.368971] (-) TimerEvent: {}
+[17.469084] (-) TimerEvent: {}
+[17.569752] (-) TimerEvent: {}
+[17.670692] (-) TimerEvent: {}
+[17.770854] (-) TimerEvent: {}
+[17.871383] (-) TimerEvent: {}
+[17.971904] (-) TimerEvent: {}
+[18.072270] (-) TimerEvent: {}
+[18.172450] (-) TimerEvent: {}
+[18.272780] (-) TimerEvent: {}
+[18.372965] (-) TimerEvent: {}
+[18.474151] (-) TimerEvent: {}
+[18.574570] (-) TimerEvent: {}
+[18.674752] (-) TimerEvent: {}
+[18.774921] (-) TimerEvent: {}
+[18.875142] (-) TimerEvent: {}
+[18.975354] (-) TimerEvent: {}
+[19.076601] (-) TimerEvent: {}
+[19.176762] (-) TimerEvent: {}
+[19.276940] (-) TimerEvent: {}
+[19.377322] (-) TimerEvent: {}
+[19.477509] (-) TimerEvent: {}
+[19.577661] (-) TimerEvent: {}
+[19.677917] (-) TimerEvent: {}
+[19.779756] (-) TimerEvent: {}
+[19.879923] (-) TimerEvent: {}
+[19.980111] (-) TimerEvent: {}
+[20.080797] (-) TimerEvent: {}
+[20.180974] (-) TimerEvent: {}
+[20.281968] (-) TimerEvent: {}
+[20.382108] (-) TimerEvent: {}
+[20.482339] (-) TimerEvent: {}
+[20.582523] (-) TimerEvent: {}
+[20.682709] (-) TimerEvent: {}
+[20.784195] (-) TimerEvent: {}
+[20.884407] (-) TimerEvent: {}
+[20.985138] (-) TimerEvent: {}
+[21.085347] (-) TimerEvent: {}
+[21.185711] (-) TimerEvent: {}
+[21.286197] (-) TimerEvent: {}
+[21.386939] (-) TimerEvent: {}
+[21.487180] (-) TimerEvent: {}
+[21.588125] (-) TimerEvent: {}
+[21.688427] (-) TimerEvent: {}
+[21.788604] (-) TimerEvent: {}
+[21.888976] (-) TimerEvent: {}
+[21.989234] (-) TimerEvent: {}
+[22.089393] (-) TimerEvent: {}
+[22.189552] (-) TimerEvent: {}
+[22.289707] (-) TimerEvent: {}
+[22.390339] (-) TimerEvent: {}
+[22.490969] (-) TimerEvent: {}
+[22.591448] (-) TimerEvent: {}
+[22.691610] (-) TimerEvent: {}
+[22.793575] (-) TimerEvent: {}
+[22.893779] (-) TimerEvent: {}
+[22.994808] (-) TimerEvent: {}
+[23.094947] (-) TimerEvent: {}
+[23.195340] (-) TimerEvent: {}
+[23.296309] (-) TimerEvent: {}
+[23.396616] (-) TimerEvent: {}
+[23.496776] (-) TimerEvent: {}
+[23.596959] (-) TimerEvent: {}
+[23.697088] (-) TimerEvent: {}
+[23.797255] (-) TimerEvent: {}
+[23.897421] (-) TimerEvent: {}
+[23.997597] (-) TimerEvent: {}
+[24.097779] (-) TimerEvent: {}
+[24.197974] (-) TimerEvent: {}
+[24.298296] (-) TimerEvent: {}
+[24.398467] (-) TimerEvent: {}
+[24.499867] (-) TimerEvent: {}
+[24.600016] (-) TimerEvent: {}
+[24.700324] (-) TimerEvent: {}
+[24.801198] (-) TimerEvent: {}
+[24.901361] (-) TimerEvent: {}
+[25.001890] (-) TimerEvent: {}
+[25.103161] (-) TimerEvent: {}
+[25.203607] (-) TimerEvent: {}
+[25.304393] (-) TimerEvent: {}
+[25.404572] (-) TimerEvent: {}
+[25.504972] (-) TimerEvent: {}
+[25.605222] (-) TimerEvent: {}
+[25.705413] (-) TimerEvent: {}
+[25.806377] (-) TimerEvent: {}
+[25.906552] (-) TimerEvent: {}
+[26.006762] (-) TimerEvent: {}
+[26.107128] (-) TimerEvent: {}
+[26.207336] (-) TimerEvent: {}
+[26.307789] (-) TimerEvent: {}
+[26.408090] (-) TimerEvent: {}
+[26.508385] (-) TimerEvent: {}
+[26.608562] (-) TimerEvent: {}
+[26.708768] (-) TimerEvent: {}
+[26.809088] (-) TimerEvent: {}
+[26.909299] (-) TimerEvent: {}
+[27.010206] (-) TimerEvent: {}
+[27.110428] (-) TimerEvent: {}
+[27.210616] (-) TimerEvent: {}
+[27.310784] (-) TimerEvent: {}
+[27.410960] (-) TimerEvent: {}
+[27.511152] (-) TimerEvent: {}
+[27.611380] (-) TimerEvent: {}
+[27.711568] (-) TimerEvent: {}
+[27.811893] (-) TimerEvent: {}
+[27.912116] (-) TimerEvent: {}
+[28.012326] (-) TimerEvent: {}
+[28.112535] (-) TimerEvent: {}
+[28.213162] (-) TimerEvent: {}
+[28.313599] (-) TimerEvent: {}
+[28.414766] (-) TimerEvent: {}
+[28.515022] (-) TimerEvent: {}
+[28.615375] (-) TimerEvent: {}
+[28.716724] (-) TimerEvent: {}
+[28.816878] (-) TimerEvent: {}
+[28.917041] (-) TimerEvent: {}
+[29.018822] (-) TimerEvent: {}
+[29.119064] (-) TimerEvent: {}
+[29.219484] (-) TimerEvent: {}
+[29.319654] (-) TimerEvent: {}
+[29.419896] (-) TimerEvent: {}
+[29.520074] (-) TimerEvent: {}
+[29.620231] (-) TimerEvent: {}
+[29.720391] (-) TimerEvent: {}
+[29.820657] (-) TimerEvent: {}
+[29.920819] (-) TimerEvent: {}
+[30.020996] (-) TimerEvent: {}
+[30.034009] (gap_finder) JobEnded: {'identifier': 'gap_finder', 'rc': 1}
+[30.044344] (-) EventReactorShutdown: {}

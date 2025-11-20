@@ -1,0 +1,58 @@
+gap_finder:
+  ros__parameters:
+    scan_topic: /scan
+    marker_topic: /gap_finder/triangle_markers
+    half_fov_deg: 30.0
+    # keep visual node's half_fov_deg in sync manually
+    max_considered_range: 4.0
+    cluster_eps: 0.12
+    cluster_min_points: 3
+    desired_gap_width: 0.5
+    gap_width_tolerance: 0.25
+    corridor_median_threshold: 0.3
+    corridor_enable_topic: /corridor/enable
+
+gap_finder_visual_node:
+  ros__parameters:
+    scan_topic: /scan
+    marker_topic: /gap_finder/markers
+    target_topic: /gap_finder/target
+
+    # Field-of-view thresholds (degrees/meters)
+    half_fov_deg: 30.0  # must match gap_finder.half_fov_deg
+    extended_half_fov_deg: 45.0
+    clear_distance_threshold: 0.15
+    tight_clearance: 0.5
+    max_considered_range: 4.0
+    fov_extend_distance: 0.15
+    fov_extend_count: 6
+
+    # Gap detection using range jumps (meters)
+    gap_jump_threshold: 0.20
+
+    # Filtered scan clustering (DBSCAN)
+    cluster_eps: 0.12
+    cluster_min_points: 3
+    midpoint_blend_weight: 0.5
+
+    # Telemetry
+    status_log_interval_sec: 0.5
+
+corridor_controller:
+  ros__parameters:
+    scan_topic: /scan
+    cmd_vel_topic: /cmd_vel
+    enable_topic: /corridor/enable
+    active_topic: /corridor/active
+    max_range: 2.5
+    front_threshold: 0.7
+    side_threshold: 0.6
+    critical_front: 0.25
+    forward_speed: 0.12
+    turn_speed: 0.6
+    turn_deadband: 0.05
+    log_interval_sec: 0.1
+    smoothing_gain: 0.15
+    wheel_base: 0.33
+    side_gain: 1.0
+    curve_gain: 1.0

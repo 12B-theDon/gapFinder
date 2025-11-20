@@ -1,0 +1,17 @@
+[0.016s] Invoking command in '/gapFinder_ws/build/gap_finder': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/wall_ws/install/wall_followint:/opt/ros/humble /usr/bin/cmake --build /gapFinder_ws/build/gap_finder -- -j24 -l24
+[0.052s] Invoked command in '/gapFinder_ws/build/gap_finder' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/wall_ws/install/wall_followint:/opt/ros/humble /usr/bin/cmake --build /gapFinder_ws/build/gap_finder -- -j24 -l24
+[0.063s] Invoking command in '/gapFinder_ws/build/gap_finder': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/wall_ws/install/wall_followint:/opt/ros/humble /usr/bin/cmake --install /gapFinder_ws/build/gap_finder
+[0.068s] -- Install configuration: ""
+[0.068s] -- Execute custom install script
+[0.068s] -- Up-to-date symlink: /gapFinder_ws/install/gap_finder/share/gap_finder/launch/gap_finder_launch.py
+[0.068s] -- Up-to-date symlink: /gapFinder_ws/install/gap_finder/share/gap_finder/launch/gap_finder_markers_only_launch.py
+[0.068s] -- Up-to-date symlink: /gapFinder_ws/install/gap_finder/share/gap_finder/configs/default.yaml
+[0.069s] [31mCMake Error at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:100 (message):
+[0.069s]   ament_cmake_symlink_install_directory() can't find
+[0.069s]   '/gapFinder_ws/src/gap_finder/rviz'
+[0.069s] Call Stack (most recent call first):
+[0.069s]   ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:314 (ament_cmake_symlink_install_directory)
+[0.069s]   cmake_install.cmake:46 (include)
+[0.069s] 
+[0.069s] [0m
+[0.071s] Invoked command in '/gapFinder_ws/build/gap_finder' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/wall_ws/install/wall_followint:/opt/ros/humble /usr/bin/cmake --install /gapFinder_ws/build/gap_finder
