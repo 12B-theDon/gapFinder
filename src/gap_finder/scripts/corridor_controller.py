@@ -134,14 +134,6 @@ class CorridorController(Node):
         twist.angular.z = self._current_angular
         self.cmd_pub.publish(twist)
 
-        if self._corridor_enabled and (now - self._last_log_time) >= self.log_interval:
-            self._last_log_time = now
-            msg = ' '.join(
-                f'{name}: {distances[name]:.2f}m'
-                for name in ['left', 'front_left', 'front', 'front_right', 'right', 'back_right', 'back', 'back_left']
-            )
-            self.get_logger().info(msg)
-
     def enable_callback(self, msg: Bool) -> None:
         previous = self._corridor_enabled
         self._corridor_enabled = bool(msg.data)
