@@ -13,7 +13,6 @@ install(DIRECTORY
 install(PROGRAMS
   scripts/gap_finder_node.py
   scripts/gap_finder_visual_node.py
-  scripts/modified_gap_finder_visual_node.py
   scripts/corridor_controller.py
   scripts/scan_median_node.py
   DESTINATION lib/${PROJECT_NAME}
