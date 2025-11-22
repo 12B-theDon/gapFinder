@@ -1,16 +1,27 @@
 gap_finder:
   ros__parameters:
-    scan_topic: /scan
-    marker_topic: /gap_finder/triangle_markers
-    half_fov_deg: 30.0
-    # keep visual node's half_fov_deg in sync manually
-    max_considered_range: 4.0
-    cluster_eps: 0.12
-    cluster_min_points: 3
-    desired_gap_width: 0.5
-    gap_width_tolerance: 0.25
-    corridor_median_threshold: 0.3
-    corridor_enable_topic: /corridor/enable
+    scan_topic: "/scan"
+    marker_topic: "/gap_finder/scan_markers"
+    corridor_enable_topic: "/corridor/enable"
+
+    # Field of View (FOV) Angles in Degrees (Customizable)
+    fov_min: -50.0  # Left boundary of FOV in degrees
+    fov_max: 50.0   # Right boundary of FOV in degrees
+
+    # Maximum Considered Range (in meters)
+    max_considered_range: 3.0  # Max range for considering objects
+
+    # Clustering Parameters
+    cluster_eps: 0.05           # Clustering distance threshold (in meters)
+    cluster_min_points: 3       # Minimum number of points in a valid cluster
+
+    # Gap Detection Parameters
+    desired_gap_width: 0.5      # Desired gap width (in meters)
+    gap_width_tolerance: 0.1    # Tolerance for gap width (in meters)
+
+    # Corridor Threshold (for gap detection)
+    corridor_median_threshold: 0.5  # Add this parameter
+
 
 gap_finder_visual_node:
   ros__parameters:
@@ -44,8 +55,8 @@ corridor_controller:
     cmd_vel_topic: /cmd_vel
     enable_topic: /corridor/enable
     active_topic: /corridor/active
-    max_range: 2.5
-    front_threshold: 0.7
+    max_range: 2.0
+    front_threshold: 1.0
     side_threshold: 0.6
     critical_front: 0.25
     forward_speed: 0.12
