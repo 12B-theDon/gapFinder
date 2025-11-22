@@ -10,7 +10,8 @@ from sensor_msgs.msg import LaserScan
 
 @dataclass(frozen=True)
 class GapFinderConfig:
-    half_fov: float
+    fov_min: float  # Left side of FOV in degrees
+    fov_max: float  # Right side of FOV in degrees
     max_range: float
     cluster_eps: float
     cluster_min_points: int
@@ -34,11 +35,10 @@ class GapFinderProcessor:
 
     def __init__(self, config: GapFinderConfig, logger=None) -> None:
         self._cfg = config
-        self._logger = logger
-
+        
     def process_scan(self, scan: LaserScan) -> ProcessResult:
-        forward_points = self._collect_points(scan, half_fov=self._cfg.half_fov)
-        all_points = self._collect_points(scan, half_fov=math.pi)
+        forward_points = self._collect_points(scan)
+        all_points = self._collect_points(scan)  # For all points (full scan)
         global_median = self._compute_global_median(scan)
 
         forward_clusters = self._cluster_points(forward_points)
@@ -83,21 +83,25 @@ class GapFinderProcessor:
 
     def _collect_points(
         self,
-        scan: LaserScan,
-        *,
-        half_fov: float,
+        scan: LaserScan
     ) -> List[Dict[str, float]]:
         points: List[Dict[str, float]] = []
         angle = scan.angle_min
+        # Filtering the points based on the fov_min and fov_max
         for rng in scan.ranges:
             if not math.isfinite(rng):
                 angle += scan.angle_increment
                 continue
             rng = min(rng, self._cfg.max_range)
-            if abs(angle) <= half_fov:
+
+            # Calculate angle in degrees
+            angle_deg = math.degrees(angle)
+
+            if self._cfg.fov_min <= angle_deg <= self._cfg.fov_max:
                 x = rng * math.cos(angle)
                 y = rng * math.sin(angle)
-                points.append({'x': x, 'y': y, 'range': rng, 'angle': angle})
+                points.append({'x': x, 'y': y, 'range': rng, 'angle': angle_deg})
+            
             angle += scan.angle_increment
         return points
 
