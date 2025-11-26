@@ -1,0 +1,50 @@
+gap_finder:
+  ros__parameters:
+    scan_topic: /scan
+    marker_topic: /gap_finder/triangle_markers
+    half_fov_deg: 40.0
+    # keep visual node's half_fov_deg in sync manually
+    max_considered_range: 1.0
+    cluster_eps: 0.12
+    cluster_min_points: 10
+    cluster_distance_threshold: 0.75
+    approach_enable_margin: 0.05
+    approach_cmd_topic: /cmd_vel
+    approach_forward_speed: 0.3
+    approach_turn_speed: 0.7
+    approach_turn_deadband: 0.02
+    corridor_enable_topic: /corridor/enable
+    
+    base_frame: base_link
+
+corridor_controller:
+  ros__parameters:
+    scan_topic: /scan
+    cmd_vel_topic: /cmd_vel
+    enable_topic: /corridor/enable
+    active_topic: /corridor/active
+    base_frame: base_link
+    max_range: 2.0
+    front_threshold: 0.5
+    side_threshold: 0.4
+    critical_front: 0.35
+    wheel_base: 0.33
+    forward_speed: 0.3
+    turn_speed: 0.6
+    turn_deadband: 0.05
+    side_gain: 1.0
+    curve_gain: 1.0
+    smoothing_gain: 0.2
+    log_interval_sec: 1.0
+
+
+tunnel_following:
+  ros__parameters:
+    scan_topic: /scan
+    cmd_vel_topic: /cmd_vel
+    half_fov_deg: 40.0
+    max_considered_range: 1.0
+    linear_speed: 0.3
+    angular_speed: 0.45
+
+    base_frame: base_link
