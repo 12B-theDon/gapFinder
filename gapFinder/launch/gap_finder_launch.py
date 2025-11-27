@@ -23,13 +23,6 @@ def generate_launch_description() -> LaunchDescription:
             ),
             Node(
                 package='gap_finder',
-                executable='gap_finder_visual_node.py',
-                name='gap_finder_visual_node',
-                output='screen',
-                parameters=[config_file],
-            ),
-            Node(
-                package='gap_finder',
                 executable='corridor_controller.py',
                 name='corridor_controller',
                 output='screen',
