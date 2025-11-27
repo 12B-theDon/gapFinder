@@ -1,3 +1,22 @@
+dbscan_finder:
+  ros__parameters:
+    scan_topic: /scan
+    marker_topic: /dbscan_markers
+    left_waypoint_topic: /dbscan/left_waypoint
+    right_waypoint_topic: /dbscan/right_waypoint
+    median_waypoint_topic: /dbscan/median_waypoint
+    half_fov_deg: 40.0
+    max_considered_range: 1.0
+    cluster_eps: 0.12
+    cluster_min_points: 10
+    cluster_distance_threshold: 0.75
+    steering_cmd_topic: /cmd_vel
+    steering_linear_speed: 0.12
+    steering_angular_gain: 2.0
+    steering_max_angular_speed: 1.5
+    close_cluster_distance: 0.35
+    close_speed_ratio: 0.4
+
 gap_finder:
   ros__parameters:
     scan_topic: /scan
@@ -10,41 +29,35 @@ gap_finder:
     cluster_distance_threshold: 0.75
     approach_enable_margin: 0.05
     approach_cmd_topic: /cmd_vel
-    approach_forward_speed: 0.3
+    approach_forward_speed: 0.18
     approach_turn_speed: 0.7
-    approach_turn_deadband: 0.02
+    approach_turn_deadband: 0.1
     corridor_enable_topic: /corridor/enable
-    
-    base_frame: base_link
+
+corridor_enable_publisher:
+  ros__parameters:
+    enable_topic: /corridor/enable
+    publish_period_sec: 0.5
 
 corridor_controller:
   ros__parameters:
     scan_topic: /scan
     cmd_vel_topic: /cmd_vel
-    enable_topic: /corridor/enable
-    active_topic: /corridor/active
-    base_frame: base_link
-    max_range: 2.0
-    front_threshold: 0.5
-    side_threshold: 0.4
-    critical_front: 0.35
-    wheel_base: 0.33
-    forward_speed: 0.3
-    turn_speed: 0.6
-    turn_deadband: 0.05
-    side_gain: 1.0
-    curve_gain: 1.0
-    smoothing_gain: 0.2
-    log_interval_sec: 1.0
-
-
+    half_front_degree_range: 30.0
+    free_considered_range: 1.0
+    obstacle_detect_distance: 0.33
+    default_speed: 0.06  
+    turning_speed: 3.0
+    front_LR_steering_deadband: 0.05
+    F_FL_FR_similar_threshold: 0.05
+    steering_smoothing_gain: 0.1 # lesser, more smoothing
+    last_LR_mean_steering_deadband: 0.05
+    
 tunnel_following:
   ros__parameters:
     scan_topic: /scan
     cmd_vel_topic: /cmd_vel
     half_fov_deg: 40.0
     max_considered_range: 1.0
-    linear_speed: 0.3
+    linear_speed: 0.12
     angular_speed: 0.45
-
-    base_frame: base_link

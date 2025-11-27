@@ -12,9 +12,10 @@ install(DIRECTORY
 
 install(PROGRAMS
   scripts/gap_finder_node.py
-  scripts/gap_finder_processing.py
   scripts/corridor_controller.py
+  scripts/gap_finder_processing.py
   scripts/tunnel_following_node.py
+  scripts/corridor_enable_publisher.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
